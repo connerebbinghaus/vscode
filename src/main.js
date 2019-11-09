@@ -142,6 +142,9 @@ function configureCommandlineSwitches(cliArgs) {
 	// Force pre-Chrome-60 color profile handling (for https://github.com/Microsoft/vscode/issues/51791)
 	app.commandLine.appendSwitch('disable-color-correct-rendering');
 
+	// enable transparent
+	app.commandLine.appendSwitch('enable-transparent-visuals');
+
 	// Support JS Flags
 	const jsFlags = getJSFlags(cliArgs);
 	if (jsFlags) {
